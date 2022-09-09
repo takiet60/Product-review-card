@@ -1,0 +1,111 @@
+:root {
+  --clr-cyan: hsl(158, 36%, 37%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-dark-blue: hsl(212, 21%, 14%);
+  --clr-grayish-blue: hsl(228, 12%, 48%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  line-height: 1;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-color: var(--clr-cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: min(90%, 350px);
+  border-radius: 20px;
+  overflow: hidden;
+  color: var(--clr-grayish-blue);
+  background: var(--clr-white);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.card > * {
+  margin-bottom: 0.5rem;
+}
+
+.card__img {
+  background-image: url("./images/image-product-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+}
+
+.card__content {
+  padding: 1.5rem;
+}
+
+.card__content > * {
+  margin-bottom: 1rem;
+}
+.card__type {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.card__title {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--clr-dark-blue);
+}
+.card__description {
+}
+.card__price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--clr-cyan);
+  margin: auto;
+}
+.card__value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: var(--clr-grayish-blue);
+  text-decoration: line-through;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--clr-cyan);
+  color: var(--clr-white);
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
